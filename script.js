@@ -13,4 +13,5 @@ var swiper = new Swiper(".mySwiper", {
         externalLoginBtn.addEventListener('click', () => {
           window.location.href = 'login.html'; // Redirect to login.html
       });
+      
   
