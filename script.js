@@ -14,4 +14,19 @@ var swiper = new Swiper(".mySwiper", {
           window.location.href = 'login.html'; // Redirect to login.html
       });
       
-  
+      // Get the elements
+const searchInput = document.getElementById('search-input');
+const searchPage = document.getElementById('search-page');
+const cancelBtn = document.getElementById('cancel-btn');
+const searchBox = document.querySelector('.search-box'); // Get the search box div
+
+// Show the search overlay when the search box is clicked
+searchBox.addEventListener('click', () => {
+  searchPage.style.display = 'block';
+  searchInput.blur(); // Remove focus from the small input
+});
+
+// Hide the search overlay when the cancel button is clicked
+cancelBtn.addEventListener('click', () => {
+  searchPage.style.display = 'none';
+});

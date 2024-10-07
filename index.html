@@ -43,15 +43,35 @@
       <h4>Collection</h4>
       <h4>Contact</h4>
         </div>
-        <div id="nav-part2">
-          <div class="search-box">
-            <i class="ri-search-line"></i>
-            <input type="text" placeholder="Search" />
-          </div>
-          <i class="ri-shopping-cart-line"></i>
-          <button id="login-btn">Login</button>
-        </div>
-               
+       <!-- Main Navigation Part with Search Box -->
+<div id="nav-part2">
+  <div class="search-box">
+    <i class="ri-search-line"></i>
+    <input type="text" id="search-input" placeholder="Search" />
+  </div>
+  <i class="ri-shopping-cart-line"></i>
+  <button id="login-btn">Login</button>
+</div>
+
+<!-- Fullscreen Search Page (Initially Hidden) -->
+<div id="search-page" class="search-page-overlay" style="display: none;">
+  <div class="search-bar-container">
+    <input type="text" id="search-page-input" placeholder="Search" />
+    <button id="cancel-btn">Cancel</button>
+  </div>
+  <h5>Popular Search Terms</h5>
+  <ul>
+    <li>jordan</li>
+    <li>air force 1</li>
+    <li>air max</li>
+    <li>shoes</li>
+    <li>football shoes</li>
+    <li>blazer</li>
+    <li>air jordan 1</li>
+    <li>slides</li>
+  </ul>
+</div>
+
     </div>
     <div id="content">
         <div id="left">
