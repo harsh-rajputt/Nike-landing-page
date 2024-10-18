@@ -319,4 +319,207 @@ ul li {
     border-radius: 6px;
     border-bottom-right-radius: 0;
   }
-  
+  header {
+    display: flex; /* Arrange content horizontally */
+    justify-content: space-between; /* Push header text to the left and product to the right */
+    align-items: center; /* Vertically center items */
+    padding: 50px; /* Add padding around the header */
+    background-color: #f4f4f4; /* Light background for header */
+    background-image: url('bg1.avif'); /* Optional background image */
+    background-size: cover; /* Cover entire header */
+    background-position: center;
+    height: 700px;
+}
+
+/* Align Header Text to the Left */
+.header-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #000;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Featured Product Section on the Right */
+.featured-product {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%; /* Restrict width for better alignment */
+}
+
+.product-card {
+    background-color: #d0d4d5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%; /* Adjust the image size */
+    max-width: 250px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #000;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.product-card button:hover {
+    background-color: #444;
+}
+
+.best-sellers {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.best-sellers h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.promotion {
+  display: flex;  /* Use Flexbox to align items horizontally */
+  justify-content: space-between; /* Create space between text and image */
+  align-items: center; /* Vertically center the content */
+  padding: 50px; /* Add padding around the section */
+  background-color: #f4f4f4; /* Light background color */
+  margin: 20px 0; /* Add some margin to separate the section from other content */
+}
+
+/* Promotion Text on the Left */
+.promotion-text {
+  max-width: 50%; /* Restrict text width to half of the section */
+  text-align: left; /* Align text to the left */
+}
+
+.promotion-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.promotion-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.promotion-text button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.promotion-text button:hover {
+  background-color: #444;
+}
+
+/* Promotion Image on the Right */
+.promotion-image img {
+  width: 100%;
+  max-width: 400px; /* Limit the image size */
+  border-radius: 10px;
+}
+
+  footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-country {
+    font-size: 12px;
+    color: #777;
+}

@@ -30,3 +30,15 @@ searchBox.addEventListener('click', () => {
 cancelBtn.addEventListener('click', () => {
   searchPage.style.display = 'none';
 });
+
+// script.js
+
+// This can be expanded to manage cart functionality
+const addToCartButtons = document.querySelectorAll('.product-card button');
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Product added to cart!');
+    });
+});
+
